@@ -17,14 +17,14 @@
   <!-- NAVIGATION
     ================================================== -->
   @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-  @@if (sidebarSize == '' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
   @@include("partials/sidebar.html", {
   "category": "pages",
   "subcategory": "project",
   "page": "index.html"
   })
   }
-  @@if (sidebarSize == 'base' || demoMode) {
+  @@if (sidebarSize == 'small' || demoMode) {
   @@include("partials/sidebar-sm.html", {
   "category": "pages",
   "subcategory": "project",
@@ -49,7 +49,7 @@
     @@include("partials/topbar.html")
     }
 
-    <!-- HEADER Updated d181 Chai Forest 4:20pm -->
+    <!-- HEADER -->
     <div class="header">
 
       <!-- AIRCRFT cover splash Image Updated d186 10:49pm by Chai Forest 10:45am -->
@@ -60,11 +60,9 @@
       <img src="assets/img/covers/aircrft-exponential-innovation-platform-double-skinny-rainbow.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow"> 
       <img src="assets/img/covers/aircrft-open-source-startup-builder.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> 
       <img src="assets/img/covers/aircrft-be-the-ceo-of-you.png" class="header-img-top" alt="aircrft-be-the-ceo-of-you"> 
-      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> 
-      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> 
-      <img src="assets/img/covers/aircrft-index-cover-d197.png" class="header-img-top" alt="aircrft-index-cover-d197"> -->
-       <img src="assets/img/covers/aircrft-cover-d198-startups-helping-startups.png" class="header-img-top" alt="aircrft-cover-d198-startups-helping-startups">
-   
+      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> -->
+      <img src="assets/img/covers/aircrft-expo-hub-d184.png" class="header-img-top" alt="aircrft-expo-hub-d184.png"> 
+      
       <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
 
         <!-- Body -->
@@ -81,15 +79,10 @@
             </div>
             <div class="col mb-3 ml-n3 ml-md-n2">
 
-              <!-- Pretitle Startups Helping Startups (23) 
+              <!-- Pretitle -->
               <h6 class="header-pretitle">
                 STARTUPS HELPING STARTUPS
-              </h6> -->
-              
-              <!-- Pretitle Startups Helping Startups (23) 
-              <h6 class="header-pretitle">
-                UPLIFT & RISE TOGETHER
-              </h6> -->
+              </h6> 
               
               <!-- Pretitle 
               <h6 class="header-pretitle">
@@ -121,19 +114,9 @@
                 Open source startup builder
               </h1> -->
               
-              <!-- Title Uplift & rise together (19) 
+              <!-- Title -->
               <h1 class="header-title">
                 Uplift & rise together
-              </h1> -->
-              
-              <!-- Title Uplift & rise together (19) -->
-              <h1 class="header-title">
-                Uplift algorithm
-              </h1> 
-              
-              <!-- Title Uplift & rise together (19) 
-              <h1 class="header-title">
-                Startups helping startups -->
               </h1> 
               
               
@@ -177,7 +160,7 @@
                 
               <!-- Sidebar Menu Trigger Modal Button d184 -->
                 <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                <i class="fe fe-sliders mr-2"></i> Join AIRCRFT
                 </a> 
                 
               <!-- Button 
@@ -237,135 +220,6 @@
     <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
       <div class="row justify-content-center">
         <div class="col-12 col-xl-8">
-        
-                <!-- AIRCFT Platform Post Monday 6.30.2020 d184 CEO OF YOU AIRCRFT MTP by Chai Forest 3:19pm -->
-          <div class="card">
-            <div class="card-body">
-              
-              <!-- Header -->
-              <div class="mb-3">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                   
-                    <!-- Avatar -->
-                    <a href="#" class="avatar">
-                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="AIRCRFT" class="avatar-img rounded-circle">
-                    </a>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Title -->
-                    <h4 class="card-title mb-1">
-                      AIRCRFT 
-                    </h4>
-                              <!-- Time -->
-                    <p class="card-text small text-muted">Pilot
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">03 mins ago
-                        | Day 187</time>
-                    </p>
-
-                  </div>
-                  <div class="col-auto">
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-                  
-              <!-- Image -->
-              <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-ceo-of-you-d187.png" alt="aircrft-ceo-of-you-d187"
-                  class="img-fluid rounded">
-              </p>
-              
-            </div>
-         </div>
-        
-        <!-- AIRCFT Platform Post Monday 6.30.2020 d184 CEO OF YOU AIRCRFT MTP by Chai Forest 3:19pm -->
-          <div class="card">
-            <div class="card-body">
-              
-              <!-- Header -->
-              <div class="mb-3">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                   
-                    <!-- Avatar -->
-                    <a href="#" class="avatar">
-                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="AIRCRFT" class="avatar-img rounded-circle">
-                    </a>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Title -->
-                    <h4 class="card-title mb-1">
-                      AIRCRFT 
-                    </h4>
-                              <!-- Time -->
-                    <p class="card-text small text-muted">Pilot
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">33 mins ago
-                        | Day 181</time>
-                    </p>
-
-                  </div>
-                  <div class="col-auto">
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-                  
-              <!-- Image -->
-              <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-be-the-ceo-of-you-uplift-algorithm-d181.png" alt="aircrft-be-the-ceo-of-you-uplift-algorithm"
-                  class="img-fluid rounded">
-              </p>
-              
-            </div>
-         </div>
-        
-        <!-- AIRCFT Platform  Post d187 THE CEO OF YOU -->
-          <div class="card">
-            <div class="card-body">
-              
-              <!-- Header -->
-              <div class="mb-3">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                   
-                    <!-- Avatar -->
-                    <a href="#" class="avatar">
-                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="AIRCRFT" class="avatar-img rounded-circle">
-                    </a>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Title -->
-                    <h4 class="card-title mb-1">
-                      AIRCRFT 
-                    </h4>
-                              <!-- Time -->
-                    <p class="card-text small text-muted">Pilot
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">01 min ago
-                        | Day 189</time>
-                    </p>
-
-                  </div>
-                  <div class="col-auto">
-
-                  </div>
-                </div> <!-- / .row -->
-              </div>
-                  
-              <!-- Image -->
-              <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-ceo-of-you.png" alt="aircrft-ceo-of-you"
-                  class="img-fluid rounded">
-              </p>
-              
-            </div>
-         </div>
         
         <!-- AIRCFT Platform Post Monday 6.30.2020 d184 CEO OF YOU AIRCRFT MTP by Chai Forest 3:19pm -->
           <div class="card">
