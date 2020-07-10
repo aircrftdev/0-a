@@ -1210,64 +1210,53 @@
 
       <!-- Push content down -->
       <div class="mt-auto"></div>
-      
-      <!-- Button 
-      <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal"> 
-        <i class="fe fe-sliders mr-2"></i> deploy builder
-      </a> -->
-      
-      <!-- @@if (demoMode) {
-      Customize 
-      <a href="#modalAllAccessPass1" class="btn btn-block btn-primary mb-4" data-toggle="modal">
-        <i class="fe fe-sliders mr-2"></i> DEPLOY
-      </a>
-      } -->
-      
+
+      @@if (demoMode) {
+      <!-- Customize -->
+      <div id="popoverDemo" data-toggle="popover" data-trigger="manual" title="Make Dashkit Your Own!" data-content="Switch the demo to Dark Mode or adjust the navigation layout, icons, and colors!">
+        <a href="#modalDemo" class="btn btn-block btn-primary mb-4" data-toggle="modal">
+          <i class="fe fe-sliders mr-2"></i> Customize
+        </a>
+      </div>
+      }
+
       @@if (navPosition == 'sidenav') {
       <!-- User (md) -->
       <div class="navbar-user d-none d-md-flex" id="sidebarUser">
-        
+
         <!-- Icon -->
         <a href="#sidebarModalActivity" class="navbar-user-link" data-toggle="modal">
           <span class="icon">
             <i class="fe fe-bell"></i>
           </span>
-        </a> 
-        
-        <!-- Dropup -->
-        <div class="dropup"> 
-        
-        <!-- AIRCRFT LOGO Trigger SideBarModalActivity d186 -->
-        <a href="#sidebarModalActivity3Sidebar" class="navbar-user-link" data-toggle="modal">
-          <div class="avatar avatar-sm avatar-online">
-              <img src="@@webRoot/assets/img/AIRCRFT-logo-index-v2.jpeg" class="avatar-img rounded-circle" alt="AIRCRFT logo">
-          </div>
         </a>
 
-        <!-- Dropup 
-        <div class="dropup"> -->
-          
-          <!-- Toggle 
+        <!-- Dropup -->
+        <div class="dropup">
+
+          <!-- Toggle -->
           <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="avatar avatar-sm avatar-online">
-              <img src="@@webRoot/assets/img/AIRCRFT-logo-index-v2.jpeg" class="avatar-img rounded-circle" alt="AIRCRFT logo">
+              <img src="@@webRoot/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
             </div>
-          </a> -->
+          </a>
 
-          <!-- Menu 
+          <!-- Menu -->
           <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
-            <a href="memberships.html" class="dropdown-item">Memberships</a>
-            <a href="settings.html" class="dropdown-item">Account Settings</a>
+            <a href="@@webRoot/profile-posts.html" class="dropdown-item">Profile</a>
+            <a href="@@webRoot/account-general.html" class="dropdown-item">Settings</a>
             <hr class="dropdown-divider">
-            <a href="sign-in.html" class="dropdown-item">Logout</a>
-          </div> -->
+            <a href="@@webRoot/sign-in.html" class="dropdown-item">Logout</a>
+          </div>
+
+        </div>
 
         <!-- Icon -->
-        <a href="#sidebarModalStartupSearch" class="navbar-user-link" data-toggle="modal">
+        <a href="#sidebarModalSearch" class="navbar-user-link" data-toggle="modal">
           <span class="icon">
             <i class="fe fe-search"></i>
           </span>
-        </a> 
+        </a>
 
       </div>
       }
